@@ -1,11 +1,12 @@
 package br.com.mesttra.medicaldep.service;
 
+import org.springframework.amqp.rabbit.core.RabbitTemplate;
+import org.springframework.stereotype.Service;
+
 import br.com.mesttra.medicaldep.amqp.AMQPConfig;
 import br.com.mesttra.medicaldep.amqp.PlayerMessage;
 import br.com.mesttra.medicaldep.entity.Admission;
 import br.com.mesttra.medicaldep.repository.AdmissionRepository;
-import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.stereotype.Service;
 
 @Service
 public class AdmissionService {

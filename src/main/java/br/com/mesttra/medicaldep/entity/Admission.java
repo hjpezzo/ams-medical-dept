@@ -1,13 +1,15 @@
 package br.com.mesttra.medicaldep.entity;
 
-import lombok.Data;
-import org.springframework.format.annotation.DateTimeFormat;
+import java.time.LocalDate;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.time.LocalDate;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
+import lombok.Data;
 
 @Entity
 @Data
